@@ -1,0 +1,20 @@
+extends main.pug
+
+include ../blocks/header/header.pug
+
+include ../blocks/content/content.pug
+
+include ../blocks/footer/footer.pug
+
+
+
+block title
+	title projeccz
+
+block pagecontent
+
+	+header()
+
+	+content()
+	
+	+footer()
