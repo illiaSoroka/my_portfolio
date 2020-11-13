@@ -1,8 +1,14 @@
 extends main.pug
 
+include ../blocks/sidebar/sidebar.pug
+
 include ../blocks/header/header.pug
 
-include ../blocks/content/content.pug
+include ../blocks/about_me/about_me.pug
+
+include ../blocks/work-experience/work_experience.pug
+
+include ../blocks/education/education.pug
 
 include ../blocks/footer/footer.pug
 
@@ -12,9 +18,17 @@ block title
 	title projeccz
 
 block pagecontent
+	.wrapper
+		
+		+sidebar()
 
-	+header()
+		section.wrap
+			+header()
+			main.main
+				+about_me()
 
-	+content()
-	
-	+footer()
+				+work_experience()
+
+				+education()
+
+				+footer()
