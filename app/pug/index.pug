@@ -10,6 +10,10 @@ include ../blocks/work-experience/work_experience.pug
 
 include ../blocks/education/education.pug
 
+include ../blocks/my_skills/my_skills.pug
+
+include ../blocks/contacts/contacts.pug
+
 include ../blocks/footer/footer.pug
 
 
@@ -23,12 +27,19 @@ block pagecontent
 		+sidebar()
 
 		section.wrap
+		
 			+header()
+
 			main.main
+
 				+about_me()
 
 				+work_experience()
 
 				+education()
+
+				+my_skills()
+
+				+contacts()
 
 				+footer()
