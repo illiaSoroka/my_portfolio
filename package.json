@@ -13,7 +13,7 @@
     "node": "^14.2.0",
     "slick-carousel": "^1.8.1"
   },
-  "browserslist": [
+  "overrideBrowserslist": [
     "last 1 version",
     "> 1%",
     "IE 10"
