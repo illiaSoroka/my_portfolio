@@ -35,7 +35,7 @@ gulp.task('css', function () {
 			//'node_modules/magnific-popup/dist/magnific-popup.css',
 			//'node_modules/slick-carousel/slick/slick.css',
 		])
-		.pipe(concat('_libs.scss'))
+		//.pipe(concat('_libs.scss'))
 		.pipe(gulp.dest('app/sass'))
 		.pipe(browserSync.reload({ stream: true }));
 });
