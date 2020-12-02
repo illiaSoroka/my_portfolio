@@ -4,7 +4,13 @@ mixin contacts()
 			.my_contacts
 
 				section.message
-					h3 Leave a Message
+					form
+						h3 Leave a Message
+
+						input(type="text", id="name", name="user_name")
+						input(type="email", id="email", name="user_email")
+						textarea(id="bio", name="user_bio", cols="30", rows="10")
+						a(href="#" class="button") Hire Me!
 
 
 
