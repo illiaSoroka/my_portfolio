@@ -4,13 +4,16 @@ mixin contacts()
 			.my_contacts
 
 				section.message
-					form
+					form(action="index.html" method="post")
 						h3 Leave a Message
-
-						input(type="text", id="name", name="user_name")
-						input(type="email", id="email", name="user_email")
-						textarea(id="bio", name="user_bio", cols="30", rows="10")
-						a(href="#" class="button") Hire Me!
+						
+						input(type="text" id="name" name="user_name" placeholder="Name*" required
+)
+						input(type="email" id="email" name="user_email" placeholder="Email*" required
+)
+						textarea(id="bio" name="user_bio" placeholder="Message*" min="100" required
+)
+						button(type="submit" class="button" id="button") Hire Me!
 
 
 
@@ -18,7 +21,7 @@ mixin contacts()
 					.line_circle
 
 				section.contact_info
-					section.contact
+					section.contact#location
 						.icons
 							img(src="img/icon/Home.svg", alt="home")
 						.text

@@ -4,36 +4,56 @@
 		text-transform: capitalize
 	.line_circle
 		height: 250px
-		padding: 0 40px
+		padding: 0 55px 0 0
 
 .my_contacts, .contact
 	display: flex
 	align-items: center
 	flex-direction: row
 
-.message
+.my_contacts
+	justify-content: center
 
-	width: 50%
+.message
+	padding-right: 75px
 	h3
 		font-size: 1.571em
-		margin-left: 39px
 
 form
-	width: 400px
-	padding: 10px 20px
-	background: #f4f7f8
+	width: 300px
+	padding: 0 10px 20px
 	border-radius: 8px
+
 	input, textarea
-		height: 30px
-		width: 80%
-		margin: 5px auto
+		height: 35px
+		width: 100%
+		margin: 10px 0
+		border-radius: 3px
+		padding-left: 10px
+	::placeholder
+		font-style: italic
+
 	textarea
-		height: 100px
+		padding-top: 10px
+		height: 95px
+
+	#button
+		display: flex
+		margin: 10px 0
+		border: none
+		font-size: 1.286em
+		color: #fff
+		align-self: flex-end
+		width: 95px
+		height: 35px
 
 .contact_info, .text, form
 	display: flex
 	flex-direction: column
 	align-items: flex-start
+
+#location
+	margin-top: 0
 
 .contact
 	margin: 25px 0
@@ -41,6 +61,7 @@ form
 address
 	padding-top: 10px
 	font-style: normal
+	text-align: left
 	a
 		color: #656565
 
