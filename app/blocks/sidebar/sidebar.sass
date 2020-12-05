@@ -3,14 +3,16 @@
 	opacity: 0.9
 	min-width: 275px
 	position: relative
+	z-index: 1000
 
 .sidebar_flex
 	width: 274px
 	position: fixed
+	z-index: 1000
 
 .head_mnu
 	height: 221px
-	background-image: linear-gradient( rgba(15, 15, 20, .2) 30%, rgba(6, 158, 227, .15) 55%, rgba(0, 0, 0, 0.5)	95%	)
+	background: linear-gradient( rgba(15, 15, 20, .2) 30%, rgba(6, 158, 227, .15) 55%, rgba(0, 0, 0, 0.5)	95%	)
 	display: flex
 	flex-direction: column
 	justify-content: flex-end
@@ -18,8 +20,7 @@
 	padding-left: 30px
 
 .sidebar_roll
-
-	li
+	.link
 		display: flex
 		align-items: center
 		height: 60px

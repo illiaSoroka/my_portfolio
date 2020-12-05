@@ -1,13 +1,64 @@
 
 /*==========	Desktop First	==========*/
 
-// ≥1200px
-@media only screen and (max-width: 1200px)
+// ≥1300px
+@media only screen and (max-width: 1300px)
+	#about_me
+		.info_about_me
+			justify-content: center
+
+// ≥1250px
+@media only screen and (max-width: 1250px)
 	/**/
 
-// ≥992px
-@media only screen and (max-width: 992px)
-	/**/
+// ≥1200px
+@media only screen and (max-width: 1200px)
+	.wrapper
+		flex-direction: column
+
+	//all block width
+	.wrap
+		width: 100%
+	//setting side bar
+	#sidebar
+		width: 100%
+		opacity: 1
+	.head_mnu
+		height: auto
+		width: 220px
+		padding: 0 20px
+		background: linear-gradient( rgba(15, 15, 20, .8) 30%, rgba(87, 85, 86, 0.8) 55%, rgba(0, 0, 0, 1)	95%	)
+		h2
+			font-size: 1.857em
+	.sidebar_flex
+		position: fixed
+		display: flex
+		width: 100%
+		z-index: 1000
+	.sidebar_roll
+		display: flex
+		width: 100%
+		background: $color
+		ul :last-child
+			border: none
+		ul
+			display: flex
+			li
+				border-right: 2px solid #000
+		.link
+			height: 65px
+			border-bottom: none
+
+			padding: 0 15px
+			font-size: 1.286em
+
+// ≥996px
+@media only screen and (max-width: 996px)
+	#header
+		height: 300px
+	.sidebar_roll
+		.link
+			font-size: 1em
 
 // ≥768px
 @media only screen and (max-width: 768px)
