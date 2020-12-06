@@ -60,14 +60,85 @@
 		.link
 			font-size: 1em
 
+// ≥835px
+@media only screen and (max-width: 835px)
+	.border
+		padding: 25px 5%
+	/*Work Experiance setting*/
+	.line
+		display: none
+	.stake
+		max-width: 275px
+		padding: 10px
+	.stake::after
+		display: none
+	.stake_grup_1
+		margin-top: 0
+	.stake_1, .stake_3
+		margin-bottom: 40px
+	.column_1
+		margin: 0 20px
+		h3
+			font-size: 1.125em
+		p
+			font-size: 1em
+	/*some setting head_mnu , about_me and my_skills*/
+	.head_mnu
+		align-items: center
+		justify-content: center
+		h2
+			font-size: 1.525em
+		p
+			display: none
+	.roll
+		font-size: .825em
+	.skills
+		margin: 0 20px 20px
 // ≥768px
 @media only screen and (max-width: 768px)
-	/**/
+	.column
+		margin: 10px 10px 0
+	.stake_1, .stake_3
+		margin-bottom: 10px
+
+// ≥665px
+@media only screen and (max-width: 665px)
+	.about_my_background
+		flex-wrap: wrap
+	.my_photo
+		display: none
+
+	/*setting contacts*/
+	.message
+		padding-right: 40px
+
+	.icons
+		padding-right: 10px
 
 // ≥576px
 @media only screen and (max-width: 576px)
-	.content
-		background-color: #000
+	.my_contacts
+		flex-direction: column
+	.contact_info
+		flex-direction: row
+		align-items: flex-start
+		h3
+			font-size: 1.125rem
+		.text
+			align-items: center
+		address
+			a
+				font-size: 1rem
+				font-weight: semi-bold
+
+	.icons
+		display: none
+	.contact
+		margin: 0 5px
+	address
+		padding-top: 0
+	.message
+		padding-right: 20px
 
 	/*==========	Mobile First	==========*/
 
