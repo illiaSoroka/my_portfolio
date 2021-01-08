@@ -5,13 +5,14 @@ mixin contacts()
 
 				section.message
 					form(class="forms" action="index.html" method="post")
-						h3 Leave a Message
-						
-						input(type="text" id="name" name="user_name" placeholder="Name*" required
-)
-						input(type="email" id="email" name="user_email" placeholder="Email*" required
-)
-						textarea(id="bio" name="user_bio" placeholder="Message*" min="100" required
+						fieldset
+							legend Leave a Message
+							
+							input(type="text" id="name" name="user_name" placeholder="Name*" required
+	)
+							input(type="email" id="email" name="user_email" placeholder="Email*" required
+	)
+							textarea(id="bio" name="user_bio" placeholder="Message*" min="100" required
 )
 						button(type="submit" class="button" id="button") Hire Me!
 
