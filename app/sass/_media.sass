@@ -77,6 +77,9 @@
 	/*Work Experiance setting*/
 	.line
 		display: none
+	#education
+		#stake_1
+			margin-top: 0
 	.stake
 		max-width: 275px
 		padding: 10px
@@ -115,6 +118,8 @@
 
 // ≥775px
 @media only screen and (max-width: 775px)
+	.sidebar_roll
+		display: flex
 	.sidebar_roll:before
 		width: 175px
 
@@ -140,6 +145,7 @@
 		height: 70px
 
 	.sidebar_roll
+		display: none
 		position: fixed
 		top: 70px
 		left: 0
@@ -152,6 +158,8 @@
 				border-bottom: solid 1px #000
 				border-right: none
 
+	.sidebar
+		display: block
 	.header_burger
 		display: flex
 		align-items: center
